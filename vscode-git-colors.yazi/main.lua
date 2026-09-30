@@ -391,7 +391,7 @@ local function setup(st, opts)
 		local code = resolve(st, f.url)
 		local sign = sign_of(f, code)
 		if sign == "" then
-			return ""
+			return "  "
 		elseif f.is_hovered then
 			return ui.Line { " ", sign }
 		else
